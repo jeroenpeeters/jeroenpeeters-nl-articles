@@ -2,7 +2,7 @@
 
 Today a [colleague ](https://twitter.com/schooneman)and I ran into the problem of finding commented out sections in xhtml files. Particularly, we were looking for commented out sections that contained the keyword ‘.xhtml’. In this post I present you how to do this.
 
-![image](https://31.media.tumblr.com/88fb78a0723a27dc36f20b45ee8033eb/tumblr_inline_njlxx3FPq01t9ks7b.jpg)[[MORE]]
+![image](https://31.media.tumblr.com/88fb78a0723a27dc36f20b45ee8033eb/tumblr_inline_njlxx3FPq01t9ks7b.jpg)
 
 ## Regular expression
 
