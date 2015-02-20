@@ -2,18 +2,14 @@
 
 If you are familiar with Docker, and understand the concept of a 'network container', you can directly dive into the mechanics and go to the [Network Containers Github](https://github.com/jeroenpeeters/docker-network-containers) repository.
 
-## Introduction to Docker
+## Audience
 
-Before we start, let me quickly introduce Docker for those who are not familiar with the platform.
-
-From the [Docker website](http://www.docker.io "Docker"): "Docker is an open platform for developers and sysadmins to build, ship, and run distributed applications."
-
-But what does this actually mean?
+This article is written for people who have substantial experience with Docker. Dockerfiles, images, containers... it should all sound familiar. If not, [this](https://www.docker.com/tryit/ "Try Docker") is a great pointer to get you started.
 
 
 ## Docker Networking
 
-If you have been working with Docker you know that Docker maps the container's private ports to a -random- unique public port on the host machine. This way you can access the container's services from anywhere on your network. If you only expose one webserver, you can as well expose port 80 directly and this will work well. But if you want to expose two (or more) webservers from one host? Only one will be able to use port 80 directly. The other webservers will be available at awkard ports unless you use some kind of reverse proxy mechanism.
+If you have been working with Docker you know that Docker maps the container's private ports to a -sort of random- unique public port on the host machine. This way you can access the container's services from anywhere on your network. If you only expose one webserver, you can as well expose port 80 directly and this will work well. But if you want to expose two (or more) webservers from one host? Only one will be able to use port 80 directly. The other webservers will be available at awkard ports unless you use some kind of reverse proxy mechanism.
 
 ### Wouldn't it be nice...
 
