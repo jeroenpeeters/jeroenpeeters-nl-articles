@@ -53,9 +53,9 @@ And here we have it, the services are both available directly on the host IP and
 
 ## Network Containers: A Scripted Approach
 
-To automatically create a Network Container for a given Docker container I've created a script tha does all of steps outlined previously. The script checks a running container for the exposed ports, and generates a simple iptables script.
+To automatically create a Network Container for a given Docker container I've created a script that performs all of the steps outlined previously. The script checks a running container for the exposed ports, and generates a simple iptables script.
 
-The script takes two parameters, the name of a running container and the name of the network interfaces. The latter is needed to correctly acquire an IP adress from DHCP. The script is simple as following:
+The script takes two parameters, the name of a running container and the name of the network interfaces. The latter is needed to correctly acquire an IP adress from DHCP. The script is simply called as following:
 
 ```bash
 create-network-container.sh web1 eth1
